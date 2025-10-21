@@ -22,12 +22,13 @@ def area_triangulo(base, altura):
     """
     return (base * altura) / 2
 
-def interes_simple(monto, tasa_interes, tiempo_meses):
-  """
-  Calcula el interes simple.
-  parámetro monto: Monto del préstamo (en dólares)
-  parámetro tasa_interes: Tasa de interés anual (Valor entero)
-  parámetro tiempo_meses: Tiempo en meses (Valor entero)
-  """
-  interes = (monto * (tasa_interes / 100) * tiempo_meses)
-  return interes
+def calcular_interes (monto,tasa_interes,tiempo_meses):
+    """
+    calcula  el interes simple.
+    parametro:monto del  prestamo(en dolares)
+    parametro:tasainteres;tasa de interes anual (valor entero)
+    parametro:tiempo_meses
+    """
+    interes=monto*(tasa_interes/100)*tiempo_meses/12
+    interes=round(interes,2)
+    return interes
